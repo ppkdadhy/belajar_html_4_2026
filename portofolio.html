@@ -12,8 +12,8 @@
     <header>
         <div class="nav-container">
             <h2>Tri_Adhy</h2>
-            <!-- <button>tes</button> -->
-            <nav>
+            <button onclick="toogleMenu()">☰</button>
+            <nav id="menu">
                 <a href="#home">Home</a>
                 <a href="#ability">Ability</a>
                 <a href="#about">About</a>
@@ -93,6 +93,11 @@
     <footer>
         <p>&copy; Portofolio Tri Adhy</p>
     </footer>
+    <script>
+        function toogleMenu() {
+            document.getElementById('menu').classList.toggle("tampil");
+        }
+    </script>
 </body>
 
 </html>

@@ -44,7 +44,7 @@ nav > a:hover {
 }
 
 .parallax {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -92,7 +92,7 @@ nav > a:hover {
   justify-content: center;
   gap: 8px;
   margin-top: 20px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .normal-section {
@@ -157,6 +157,10 @@ footer {
   text-align: center;
 }
 
+.nav-container > button {
+  display: none;
+}
+
 @media (max-width: 480px) {
   .gallery {
     /* display: grid; */
@@ -177,5 +181,33 @@ footer {
   }
   figure > img {
     height: 86px;
+  }
+
+  .ability {
+    width: 200px;
+    font-size: 14px;
+  }
+  .nav-container > button {
+    margin-right: 25px;
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(249, 228, 190, 0.7);
+    width: auto;
+    padding: 10px 0px;
+    right: 25px;
+    top: 47.5px;
+  }
+  nav > a {
+    padding: 10px;
+    color: #333;
+  }
+
+  nav.tampil {
+    display: flex;
   }
 }
